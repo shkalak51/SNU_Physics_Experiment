@@ -13,7 +13,7 @@ nstxout-compressed      = 1000      ; save compressed coordinates every 2.0 ps
 compressed-x-grps       = System    ; save the whole system
 
 ; Bond parameters
-continuation            = yes       ; Restarting after NPT 
+continuation            = no       ; Restarting after NPT 
 constraint_algorithm    = lincs     ; holonomic constraints 
 constraints             = h-bonds   ; bonds involving H are constrained
 lincs_iter              = 1         ; accuracy of LINCS
@@ -51,4 +51,4 @@ pbc                     = xyz       ; 3-D PBC
 DispCorr                = EnerPres  ; account for cut-off vdW scheme
 
 ; Velocity generation
-gen_vel                 = no        ; Velocity generation is off 
+gen_vel                 = yes        ; Velocity generation is off 
